@@ -11,18 +11,18 @@ dl,
 dt,
 dd,
 ul,
-li{
+li {
     margin: 0;
     padding: 0;
     line-height: 1;
 
-/* デフォルトの文字色、font-familiyを予め当てておく */
+    /* デフォルトの文字色、font-familiyを予め当てておく */
     color: #000;
-    font-family: "游ゴシック体",YuGothic,"游ゴシック","Yu-Gothic","メイリオ",
-    "Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu-Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 }
 
-a{
+a {
     /* 下線を消す */
     text-decoration: none;
 
@@ -30,65 +30,63 @@ a{
     color: inherit;
 }
 
-ul{
+ul {
     /* 左の「・」を消す */
     list-style: none;
 }
 
-img{
-    max-width:100%;
-    vertical-align:bottom ;
-    border:none;
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
 }
 /* ここまで */
 
-.header{
+.header {
     display: flex;
     max-width: 960px;
     margin: 0 auto;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
+    padding: 20px 10px;
 }
 
-ul{
+ul {
     display: flex;
 }
 
-
-ul li{
-    
-    margin: 20px;
-    padding: 10px 40px 10px 0;
+ul li {
+    padding: 5px 30px;
     font-size: 14px;
     color: #333;
     border-right: 1px solid #333;
 }
 
-.title{
+.title {
     font-size: 28px;
     font-weight: bold;
     border-right: none;
 }
 
-ul li:last-child{
+ul li:last-child {
     border-right: none;
 }
 
-.blue{
-   max-width: 960px;
-   justify-content: space-between;
-   display: flex;
-   margin: 0 auto;
+.blue {
+    max-width: 960px;
+    justify-content: space-between;
+    display: flex;
+    margin: 0 auto;
 }
 
-.blue div{
+.blue div {
     width: 300px;
     height: 300px;
     background: blue;
     margin-bottom: 20px;
 }
 
-.red{
+.red {
     max-width: 960px;
     justify-content: space-between;
     display: flex;
@@ -96,7 +94,7 @@ ul li:last-child{
     flex-wrap: wrap;
 }
 
-.red div{
+.red div {
     width: 300px;
     height: 300px;
     background: red;
@@ -104,17 +102,18 @@ ul li:last-child{
 }
 
 /* 画面サイズ　767px以下になったらここに書いてあるCSSが適用される */
-@media screen and (max-width: 767px){
-    .header,ul{
+@media screen and (max-width: 767px) {
+    .header,
+    ul {
         display: block;
     }
 
-    ul li{
+    ul li {
         border-bottom: 1px solid #333;
-        border-right:none;
+        border-right: none;
     }
-    
-    .title{
+
+    .title {
         border-bottom: none;
     }
 }
