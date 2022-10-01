@@ -85,10 +85,14 @@ body {
 
     .service_detail {
         width: 100%;
-        margin: 20px;
+        margin-bottom: 20px;
     }
 
     .service_detail img {
         width: 100%;
+    }
+
+    .service_wrap > div {
+        padding: 0 20px;
     }
 }
