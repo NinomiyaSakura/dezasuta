@@ -21,6 +21,7 @@ li {
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
         "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
         "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
 }
 
 a {
@@ -104,7 +105,7 @@ main {
     font-size: 82px;
     line-height: 1.2;
     letter-spacing: 0.1em;
-    font-feature-settings: "palt";
+
     padding-top: 52px;
 }
 
@@ -113,8 +114,8 @@ main {
     font-size: 23px;
     line-height: 1.7;
     letter-spacing: 0.1em;
-    font-feature-settings: "palt";
-    padding: 45px 0 100px 0;
+
+    padding: 25px 0 100px 0;
 }
 
 /* アバウト */
@@ -139,7 +140,12 @@ main {
 .kodawari {
     font-size: 44px;
     line-height: 1.4;
-    padding: 58px 0 37px 0;
+    padding: 45px 0 20px 0;
+}
+
+.col {
+    width: 41%;
+    margin-left: 8%;
 }
 
 .col h2 {
@@ -147,9 +153,8 @@ main {
 }
 
 .service {
-    font: size 16px;
+    font-size: 16px;
     line-height: 1.6;
-    font-feature-settings: "palt";
 }
 
 /*メニュー */
@@ -160,7 +165,7 @@ main {
 #menu h2 {
     width: 151px;
     margin: 0 auto;
-    padding: 107px 0 48px 0;
+    padding: 95px 0 40px 0;
 }
 
 .menu_detail_wrap {
@@ -181,9 +186,10 @@ main {
     font-weight: normal;
     color: #d30202;
     margin-top: -10px;
+    margin-bottom: 14px;
+    padding-left: 12px;
 }
 .menu_detail p {
-    font-feature-settings: "palt";
     font-size: 17px;
     line-height: 1.5;
 }
@@ -192,7 +198,7 @@ main {
 #gallery h2 {
     width: 245px;
     margin: 0 auto;
-    padding: 100px 0 26px 0;
+    padding: 80px 0 20px 0;
 }
 
 .gallery_detail ul {
@@ -207,23 +213,24 @@ main {
 #event h2 {
     width: 174px;
     margin: 0 auto;
-    padding: 71px 0 39px 0;
+    padding: 60px 0 30px 0;
 }
 
 .event_wrap {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
     background: #fff;
     border: 3.7px solid;
-    padding: 41px 0 43px 163px;
+}
+
+.event_detail {
+    display: flex;
 }
 
 .event_detail p {
     font-size: 23px;
     line-height: 2;
-    font-feature-settings: "palt";
-}
-
-.event_detail {
-    display: flex;
 }
 
 .date {
@@ -238,7 +245,7 @@ main {
 #access h2 {
     width: 214px;
     margin: 0 auto;
-    padding: 80px 0 46px 0;
+    padding: 70px 0 40px 0;
 }
 
 .access_map iframe {
@@ -254,7 +261,7 @@ footer {
 
 .footer_wrap {
     display: flex;
-    padding: 82px;
+    padding: 82px 0 70px;
 }
 
 .footer_wrap h3 {
@@ -263,11 +270,13 @@ footer {
 
 .footer_wrap p {
     font-size: 20px;
+    color: #000;
     line-height: 2;
     padding-left: 68px;
 }
 
 .footer_copy p {
+    color: #000;
     text-align: center;
     padding-bottom: 78px;
 }
