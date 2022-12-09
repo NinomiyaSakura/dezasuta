@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+/* CSSリセット */
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+
+    /* デフォルトの文字色、font-familiyを予め当てておく */
+    color: #444;
+    font-family: "しっぽり明朝", Shippori Mincho, "游明朝", YuMincho,
+        "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3",
+        "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /* 下線を消す */
+    text-decoration: none;
+
+    /* 色を消す */
+    color: inherit;
+
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /* 左の「・」を消す */
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+/* ここまで */
+
+body {
+    background-image: url("../images/background_image.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.header_wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 24px 7% 0 2.8%;
+}
+
+.pc_nav ul {
+    display: flex;
+}
+
+.pc_nav ul li {
+    width: 105px;
+    margin-left: 55px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+.section_inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    letter-spacing: 0.05em;
+    font-size: 20px;
+}
+
+.title h2 {
+    padding-left: 5px;
+}
+
+#about {
+    padding: 160px 0 100px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+}
+
+.col p {
+    width: 500px;
+    font-size: 14px;
+    line-height: 2.5;
+    letter-spacing: 0.025em;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+}
+
+.dekirukoto {
+    display: flex;
+    align-items: flex-start;
+}
+
+#works {
+    padding: 160px 0 100px;
+}
+
+.design {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.design h3 {
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+
+.design img {
+    padding-bottom: 20px;
+}
+
+.design p {
+    font-size: 14px;
+    line-height: 1.8;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+}
+
+.coding {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.coding h3 {
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+
+.coding img {
+    padding-bottom: 20px;
+}
+
+.coding p {
+    font-size: 14px;
+    line-height: 1.8;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+    padding-top: 20px;
+}
+
+.jisseki {
+    display: flex;
+    align-items: flex-start;
+}
+
+.banner_1 {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.banner_1 p {
+    padding-top: 10px;
+}
+
+.banner_2 {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner_2 p {
+    padding-top: 10px;
+}
+
+.banner_3 {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.banner_3 p {
+    padding-top: 10px;
+}
+
+.banner_4 {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner_4 p {
+    padding-top: 10px;
+}
+
+.clamp_1 {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.clamp_2 {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#your-name {
+    background: #eff3f5;
+    height: 50px;
+    width: 500px;
+}
+
+#your-email {
+    background: #eff3f5;
+    height: 50px;
+    width: 500px;
+}
+
+#your-message {
+    background: #eff3f5;
+    height: 160px;
+    width: 500px;
+}
+
+.footer_wrap {
+    text-align: center;
+}
