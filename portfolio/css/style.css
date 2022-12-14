@@ -184,16 +184,19 @@ body {
 }
 
 .first_view {
+    max-width: 100%;
     position: relative;
 }
 
 .concept_1 {
+    max-width: 100%;
     position: absolute;
     left: 1000px;
-    bottom: 310px;
+    bottom: 300px;
 }
 
 .concept_2 {
+    max-width: 100%;
     position: relative;
     left: 960px;
     bottom: 340px;
