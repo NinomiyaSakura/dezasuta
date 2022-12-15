@@ -175,7 +175,7 @@ Resources body {
 
 body {
     background-image: url("../images/background_image.jpg");
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
 }
 
