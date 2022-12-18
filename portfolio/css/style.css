@@ -301,6 +301,7 @@ body {
 }
 
 .design img {
+    width: 102px;
     padding-bottom: 20px;
 }
 
@@ -324,6 +325,7 @@ body {
 }
 
 .coding img {
+    width: 161px;
     padding-bottom: 20px;
 }
 
@@ -347,6 +349,10 @@ body {
     margin-bottom: 70px;
 }
 
+.banner_1 img {
+    width: 338px;
+}
+
 .banner_1 p {
     padding-top: 10px;
 }
@@ -355,6 +361,10 @@ body {
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
+}
+
+.banner_2 img {
+    width: 324px;
 }
 
 .banner_2 p {
@@ -368,6 +378,10 @@ body {
     margin-bottom: 70px;
 }
 
+.banner_3 img {
+    width: 270px;
+}
+
 .banner_3 p {
     padding-top: 10px;
 }
@@ -376,6 +390,10 @@ body {
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
+}
+
+.banner_4 img {
+    width: 400px;
 }
 
 .banner_4 p {
@@ -441,6 +459,10 @@ body {
 
 .btn:hover {
     cursor: pointer;
+}
+
+.btn img {
+    width: 260px;
 }
 
 .footer_wrap {
@@ -576,7 +598,7 @@ body {
 
     .col {
         display: block;
-        background-image: url("../images/usagi_1_sp.jpg");
+        background-image: url("../images/usagi_1_sp.png");
         background-repeat: no-repeat;
     }
 
