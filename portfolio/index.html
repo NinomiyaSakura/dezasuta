@@ -31,24 +31,22 @@
         <li></li>
     </ul>
 
-    <header id="header">
+    <div class="first_view">
+        <picture>
+            <source srcset="images/first_view_sp@2x-100.jpg" media="(max-width: 767px)">
 
-        <div class="first_view">
+            <img src="images/first_view_pc.jpg" alt="ファーストビュー">
+        </picture>
 
-            <picture>
-                <source srcset="images/first_view_sp.png" media="(max-width: 767px)">
-
-                <img src="images/first_view_pc.jpg" alt="ファーストビュー">
-            </picture>
-
-            <div class="concept_1">
-                <img src="images/concept_1.png" alt="何気ない日常に彩りを">
-            </div>
-            <div class="concept_2">
-                <img src="images/concept_2.png" alt="ー美しいだけでなく伝わるデザインをー">
-            </div>
+        <div class="concept_1">
+            <img src="images/concept_1_pc.png" alt="何気ない日常に彩りを">
         </div>
+        <div class="concept_2">
+            <img src="images/concept_2_pc.png" alt="ー美しいだけでなく伝わるデザインをー">
+        </div>
+    </div>
 
+    <header id="header">
         <div class="header_wrap">
             <nav class="pc_nav">
                 <ul>
@@ -70,7 +68,6 @@
                 </ul>
             </nav>
         </div>
-
     </header>
 
     <main>
@@ -183,11 +180,14 @@
     </main>
 
     <footer>
-        <div class="footer_img_pc">
-            <img src="images/usagi_3_pc.jpg" alt="">
-        </div>
         <div class="footer_wrap">
-            <p>&copy; 2022 Sakura Ninomiya PORTFOLIO</p>
+            <picture>
+                <source srcset="images/usagi_3_sp.jpg" media="(max-width: 767px)">
+                <img src="images/usagi_3_pc.jpg" alt="">
+            </picture>
+            <div class="footer_copy">
+                <p>&copy; 2022 Sakura Ninomiya PORTFOLIO</p>
+            </div>
         </div>
     </footer>
 
@@ -198,6 +198,22 @@
                 $('.sp_nav').fadeToggle();
                 $('.sp_btn').toggleClass('open');
             });
+
+            // ヘッダー固定
+            var _window = $(window),
+                _header = $('#header'),
+                heroBottom;
+
+            _window.on('scroll', function () {
+                heroBottom = $('.first_view').height();
+                if (_window.scrollTop() > heroBottom) {
+                    _header.addClass('transform');
+                }
+                else {
+                    _header.removeClass('transform');
+                }
+            });
+            _window.trigger('scroll');
         });
     </script>
 </body>
