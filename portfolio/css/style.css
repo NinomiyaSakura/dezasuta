@@ -166,10 +166,11 @@ img {
     animation-delay: 4s;
 }
 
-Resources body {
+body {
     background-image: url("../images/background_image.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: space;
 }
 /* 桜散るーここまでー */
 
@@ -640,3 +641,265 @@ body {
         font-size: 12px;
     }
 }
+
+/* works*/
+/* 桜散る */
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap");
+
+.sakura_works {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sakura_works li {
+    position: absolute;
+    list-style: none;
+    top: -50px;
+    background: #ffdbed;
+    border-radius: 0% 70%;
+    animation: fall 4s linear infinite, sway 2s ease-in-out infinite alternate;
+}
+
+@keyframes fall {
+    to {
+        top: 120%;
+    }
+}
+
+@keyframes sway1 {
+    from {
+        transform: translateX(0px) rotate(0deg);
+    }
+    to {
+        transform: translateX(200px) rotate(-45deg);
+    }
+}
+
+@keyframes sway2 {
+    from {
+        transform: translateX(200px) rotate(-45deg);
+    }
+    to {
+        transform: translateX(0px) rotate(0deg);
+    }
+}
+
+.sakura_works li:nth-child(1) {
+    left: 0%;
+    width: 24px;
+    height: 15px;
+    animation: fall 10s linear infinite, sway1 3s ease-in-out infinite alternate;
+    animation-delay: 2s;
+}
+
+.sakura_works li:nth-child(2) {
+    left: 5%;
+    width: 13px;
+    height: 9px;
+    animation: fall 15s linear infinite, sway1 2s ease-in-out infinite alternate;
+    animation-delay: 8s;
+}
+
+.sakura_works li:nth-child(3) {
+    left: 15%;
+    width: 16px;
+    height: 10px;
+    animation: fall 9s linear infinite,
+        sway1 3.5s ease-in-out infinite alternate;
+    animation-delay: 13s;
+}
+
+.sakura_works li:nth-child(4) {
+    left: 30%;
+    width: 16px;
+    height: 10px;
+    animation: fall 8s linear infinite, sway2 4s ease-in-out infinite alternate;
+    animation-delay: 7s;
+}
+.sakura_works li:nth-child(5) {
+    left: 40%;
+    width: 16px;
+    height: 10px;
+    animation: fall 10s linear infinite, sway1 4s ease-in-out infinite alternate;
+    animation-delay: 0s;
+}
+.sakura_works li:nth-child(6) {
+    left: 55%;
+    width: 24px;
+    height: 15px;
+    animation: fall 11s linear infinite, sway2 3s ease-in-out infinite alternate;
+    animation-delay: 3s;
+}
+.sakura_works li:nth-child(7) {
+    left: 65%;
+    width: 16px;
+    height: 10px;
+    animation: fall 7s linear infinite,
+        sway2 3.5s ease-in-out infinite alternate;
+    animation-delay: 7s;
+}
+.sakura_works li:nth-child(8) {
+    left: 50%;
+    width: 13px;
+    height: 9px;
+    animation: fall 7s linear infinite, sway1 3s ease-in-out infinite alternate;
+    animation-delay: 3s;
+}
+.sakura_works li:nth-child(9) {
+    left: 80%;
+    width: 16px;
+    height: 10px;
+    animation: fall 10s linear infinite, sway2 4s ease-in-out infinite alternate;
+    animation-delay: 4s;
+}
+
+Resources body {
+    background-image: url("../images/background_image.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* 桜散るーここまでー */
+
+.section_inner_works {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#works_results {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.title_detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.works_title {
+    display: flex;
+    align-items: center;
+}
+
+.works_title h2 {
+    padding-left: 5px;
+}
+
+.heading {
+    border-left: 1px solid #444;
+    padding: 10px;
+    align-items: center;
+}
+
+.works_detail {
+    font-size: 14px;
+    line-height: 1.8;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+.works1_img {
+    padding-bottom: 100px;
+}
+
+.works1_img img {
+    width: 316px;
+}
+
+.works2_img {
+    padding-bottom: 100px;
+}
+
+.works2_img img {
+    width: 400px;
+}
+
+.works3_img {
+    padding-bottom: 100px;
+}
+
+.works3_img img {
+    width: 400px;
+}
+
+.works4_img {
+    padding-bottom: 100px;
+}
+
+.works4_img img {
+    width: 450px;
+}
+
+@media screen and (max-width: 767px) {
+    .sakura_works {
+        display: none;
+    }
+
+    .section_inner_works {
+        max-width: 316px;
+    }
+
+    .works_title img {
+        width: 10px;
+    }
+
+    .works_title h2 {
+        font-size: 20px;
+    }
+
+    .heading {
+        font-size: 12px;
+    }
+
+    .works_detail {
+        font-size: 12px;
+    }
+}
+/* ここまで */
+
+/* サンキューページ */
+.section_inner_thanks {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.thanks_detail {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.thanks_detail h1 {
+    padding-bottom: 30px;
+}
+
+.thanks_detail p {
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 767px) {
+    .section_inner_thanks {
+        max-width: 316px;
+    }
+
+    .thanks_detail h1 {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+
+    .thanks_detail p {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+}
+/* ここまで */
