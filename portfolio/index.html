@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sakura Ninomiya PORTFOLIO</title>
     <meta name="description" content="二宮さくらのポートフォリオサイトです。制作実績をご覧になれます。">
-    <link rel="stylesheet" href="css/style.css">
     <!-- Googleフォント -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
@@ -58,16 +60,16 @@
             </nav>
 
             <div class="sp_btn"><span></span></div>
-
-            <nav class="sp_nav">
-                <ul>
-                    <li><a href="#about">私について</a></li>
-                    <li><a href="#skill">できること</a></li>
-                    <li><a href="#works">制作実績</a></li>
-                    <li><a href="#contact">お問い合わせ</a></li>
-                </ul>
-            </nav>
         </div>
+
+        <nav class="sp_nav">
+            <ul>
+                <li><a href="#about">私について</a></li>
+                <li><a href="#skill">できること</a></li>
+                <li><a href="#works">制作実績</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -120,24 +122,24 @@
                 <div class="works_content">
                     <div class="clamp_1">
                         <div class="banner_1">
-                            <a href=""><img src="images/works_1_pc.jpg" alt="works1">
+                            <a href="./works1.html"><img src="images/works_1_pc.jpg" alt="works1">
                                 <p>LPサイト</p>
                             </a>
                         </div>
                         <div class="banner_2">
-                            <a href=""><img src="images/works_2_pc.jpg" alt="works2">
+                            <a href="./works2.html"><img src="images/works_2_pc.jpg" alt="works2">
                                 <p>バナー</p>
                             </a>
                         </div>
                     </div>
                     <div class="clamp_2">
                         <div class="banner_3">
-                            <a href=""><img src="images/works_3_pc.jpg" alt="works3">
+                            <a href="./works3.html"><img src="images/works_3_pc.jpg" alt="works3">
                                 <p>バナー </p>
                             </a>
                         </div>
                         <div class="banner_4">
-                            <a href=""><img src="images/works_4_pc.jpg" alt="works4">
+                            <a href="./works4.html"><img src="images/works_4_pc.jpg" alt="works4">
                                 <p>バナー</p>
                             </a>
                         </div>
@@ -153,21 +155,24 @@
                     <h2>お問い合わせ</h2>
                 </div>
                 <form
-                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScHBgWTV-Al5N1cs6ETDkc0jGrP1zx__3tztRgqKOLFdINA0g/formResponse">
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScHBgWTV-Al5N1cs6ETDkc0jGrP1zx__3tztRgqKOLFdINA0g/formResponse"
+                    method="POST" target="hidden_iflame" onsubmit="submitted=true;" class="c_form">
+
+
                     <div class="contact_form">
                         <div class="contact_field">
-
-                            <input id="your_name" type="text" name="entry.913581744" required placeholder="お名前">
+                            <input id="your_name" type="text" name="entry.913581744" required="required"
+                                placeholder="お名前">
                         </div>
 
                         <div class="contact_field">
-
-                            <input id="your_email" type="email" name="entry.1477878430" required placeholder="メールアドレス">
+                            <input id="your_email" type="email" name="entry.1477878430" required="required"
+                                placeholder="メールアドレス">
                         </div>
 
                         <div class="contact_field">
                             <textarea id="your_message" class="materialize-textarea" name="entry.1477878430"
-                                placeholder="お問い合わせ内容"></textarea>
+                                required="required" placeholder="お問い合わせ内容"></textarea>
                         </div>
 
                         <button type="submit" class="btn">
@@ -175,6 +180,11 @@
                         </button>
                     </div>
                 </form>
+
+
+
+
+
             </div>
         </section>
     </main>
@@ -216,9 +226,15 @@
             _window.trigger('scroll');
         });
 
+
+    </script>
+
+    <!-- サンキューページ -->
+    <script type="text/javascript">
         let submitted = false;
     </script>
-    <iframe name="hidden_iflame" style="display: none;" onload="if(submitted){window.location='thanks.html';}"></iframe>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+        onload="if(submitted){window.location='thanks.html';}"></iframe>
 </body>
 
 </html>
