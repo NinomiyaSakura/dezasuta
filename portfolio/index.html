@@ -156,7 +156,7 @@
                 </div>
                 <form
                     action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScHBgWTV-Al5N1cs6ETDkc0jGrP1zx__3tztRgqKOLFdINA0g/formResponse"
-                    method="POST" target="hidden_iflame" onsubmit="submitted=true;" class="c_form">
+                    method="post" target="hidden_iframe" onsubmit="submitted=true;">
 
 
                     <div class="contact_form">
@@ -171,7 +171,7 @@
                         </div>
 
                         <div class="contact_field">
-                            <textarea id="your_message" class="materialize-textarea" name="entry.1477878430"
+                            <textarea id="your_message" class="materialize-textarea" name="entry.519996697"
                                 required="required" placeholder="お問い合わせ内容"></textarea>
                         </div>
 
@@ -180,11 +180,10 @@
                         </button>
                     </div>
                 </form>
-
-
-
-
-
+                <!-- サンキューページ -->
+                <script type="text/javascript">var submitted = false;</script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                    onload="if(submitted){window.location='thanks.html';}"></iframe>
             </div>
         </section>
     </main>
@@ -228,13 +227,6 @@
 
 
     </script>
-
-    <!-- サンキューページ -->
-    <script type="text/javascript">
-        let submitted = false;
-    </script>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
-        onload="if(submitted){window.location='thanks.html';}"></iframe>
 </body>
 
 </html>

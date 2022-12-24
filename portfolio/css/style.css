@@ -171,9 +171,6 @@ img {
 body {
     position: relative;
     background-image: url("../images/background_image.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: space;
 }
 
 html {
@@ -213,7 +210,7 @@ html {
 }
 
 #header.transform {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.7);
     padding: 30px;
 }
 
@@ -452,10 +449,12 @@ html {
     border: none;
     background: none;
     margin-bottom: 100px;
+    transition: 0.3s;
 }
 
 .btn:hover {
     cursor: pointer;
+    opacity: 0.5;
 }
 
 .btn img {
@@ -834,6 +833,8 @@ Resources body {
 
 .backBtn_works {
     margin: 0 auto 100px;
+    z-index: 999;
+    position: relative;
 }
 
 .backBtn_works img {
@@ -1016,6 +1017,8 @@ Resources body {
 
 .backBtn_thanks {
     margin: 0 auto 100px;
+    z-index: 999;
+    position: relative;
 }
 
 .backBtn_thanks img {
