@@ -244,6 +244,7 @@ html {
 .section_inner {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .title {
@@ -260,6 +261,8 @@ html {
 
 #about {
     padding: 160px 0 100px;
+    z-index: 99;
+    position: relative;
 }
 
 .col {
@@ -273,6 +276,11 @@ html {
     line-height: 2.5;
     letter-spacing: 0.025em;
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+}
+
+#skill {
+    z-index: 99;
+    position: relative;
 }
 
 .skill_content {
@@ -605,6 +613,7 @@ html {
         display: block;
         background-image: url("../images/usagi_1_sp.png");
         background-repeat: no-repeat;
+        background-position: right 0 bottom 0;
     }
 
     .col img {
@@ -851,7 +860,7 @@ html {
     width: 150px;
 }
 
-.backBtn_works:hover {
+.backBtn_works img:hover {
     cursor: pointer;
 }
 
