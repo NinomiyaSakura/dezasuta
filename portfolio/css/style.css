@@ -261,8 +261,6 @@ html {
 
 #about {
     padding: 160px 0 100px;
-    z-index: 99;
-    position: relative;
 }
 
 .col {
@@ -276,11 +274,6 @@ html {
     line-height: 2.5;
     letter-spacing: 0.025em;
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
-}
-
-#skill {
-    z-index: 99;
-    position: relative;
 }
 
 .skill_content {
