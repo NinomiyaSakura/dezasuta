@@ -1011,7 +1011,7 @@ html {
 
 .backBtn_thanks {
     margin: 0 auto 100px;
-    z-index: 999;
+    z-index: 99;
     position: relative;
 }
 
