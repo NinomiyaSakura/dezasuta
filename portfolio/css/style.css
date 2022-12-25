@@ -566,6 +566,7 @@ html {
         background-position: center;
         z-index: 1;
     }
+
     .sp_nav ul {
         display: flex;
         flex-direction: column;
