@@ -177,6 +177,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.wrap_original {
+    overflow: hidden;
+}
+
 .first_view {
     position: relative;
 }
@@ -635,6 +639,14 @@ html {
 
     .banner_4 {
         margin-bottom: 50px;
+    }
+
+    .contact_form {
+        overflow: hidden;
+    }
+
+    .footer_wrap img {
+        width: 100%;
     }
 
     .footer_copy {
