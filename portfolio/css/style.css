@@ -590,8 +590,18 @@ html {
         padding: 0 20px;
     }
 
+    .concept_1 {
+        position: absolute;
+        left: calc(100% - 120px);
+    }
+
     .concept_1 img {
         max-width: initial;
+    }
+
+    .concept_2 {
+        position: absolute;
+        left: calc(100% - 150px);
     }
 
     .concept_2 img {
@@ -656,8 +666,7 @@ html {
     }
 }
 
-/* works*/
-/* 桜散る */
+/* works*/ /* 桜散る */
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap");
 
 .sakura_works {
