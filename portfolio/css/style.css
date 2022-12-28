@@ -196,6 +196,7 @@ html {
 
 .concept_2 {
     width: 1vw;
+    margin: vw 0;
     position: absolute;
     left: calc(50% + 150px);
     top: 63%;
@@ -592,20 +593,24 @@ html {
 
     .concept_1 {
         position: absolute;
-        left: calc(100% - 120px);
+        top: 30%;
+        left: calc(100% - 170px);
     }
 
     .concept_1 img {
         max-width: initial;
+        width: 36px;
     }
 
     .concept_2 {
         position: absolute;
-        left: calc(100% - 150px);
+        top: 40%;
+        left: calc(100% - 230px);
     }
 
     .concept_2 img {
         max-width: initial;
+        width: 14px;
     }
 
     .title img {
@@ -663,6 +668,32 @@ html {
 
     .footer_copy {
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .concept_1 {
+        position: absolute;
+        top: 35%;
+        left: calc(100% - 140px);
+    }
+
+    .concept_2 {
+        position: absolute;
+        top: 44%;
+        left: calc(100% - 200px);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .concept_1 {
+        position: absolute;
+        top: 50%;
+    }
+
+    .concept_2 {
+        position: absolute;
+        top: 59%;
     }
 }
 
