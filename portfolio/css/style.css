@@ -269,6 +269,10 @@ html {
     align-items: center;
 }
 
+.col img {
+    width: 500px;
+}
+
 .col p {
     width: 500px;
     font-size: 14px;
@@ -622,10 +626,15 @@ html {
         background-image: url("../images/usagi_1_sp.png");
         background-repeat: no-repeat;
         background-position: right 0 bottom 0;
+        background-size: 300px;
     }
 
     .col img {
         display: none;
+    }
+
+    .col p {
+        width: initial;
     }
 
     .skill_content {
