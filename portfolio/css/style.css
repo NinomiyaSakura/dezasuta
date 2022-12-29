@@ -168,6 +168,18 @@ img {
 }
 /* 桜散るーここまでー */
 
+/* フワッと表示 */
+@keyframes fadeInAnime {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/* フワッと表示 ーここまでー*/
+
 body {
     position: relative;
     background-image: url("../images/background_image.jpg");
@@ -185,6 +197,14 @@ html {
     position: relative;
 }
 
+.first_view img {
+    /* フワッと表示 */
+    animation-name: fadeInAnime;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
 .concept_1 {
     width: 2.5vw;
     margin: 2vw 0;
@@ -192,6 +212,11 @@ html {
     left: calc(50% + 200px);
     top: 50%;
     transform: translateY(-50%);
+    /* フワッと表示 */
+    animation-name: fadeInAnime;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .concept_2 {
@@ -201,6 +226,11 @@ html {
     left: calc(50% + 150px);
     top: 63%;
     transform: translateY(-50%);
+    /* フワッと表示 */
+    animation-name: fadeInAnime;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 #header {
