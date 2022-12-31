@@ -305,6 +305,7 @@ html {
 
 .col p {
     width: 500px;
+    padding-left: 20px;
     font-size: 14px;
     line-height: 2.5;
     letter-spacing: 0.025em;
